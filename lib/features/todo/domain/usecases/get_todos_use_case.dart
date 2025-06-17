@@ -6,7 +6,7 @@ class GetTodosUseCase {
 
   GetTodosUseCase(this.todoRepository);
 
-  Future<bool> execute() {
-    throw UnimplementedError();
+  Future<List<Todo>> call() {
+    return todoRepository.getTodos();
   }
 }

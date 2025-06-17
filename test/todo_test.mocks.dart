@@ -48,4 +48,31 @@ class MockTodoRepository extends _i1.Mock implements _i2.TodoRepository {
         ),
         returnValue: _i3.Future<List<_i4.Todo>>.value(<_i4.Todo>[]),
       ) as _i3.Future<List<_i4.Todo>>);
+
+  @override
+  _i3.Future<bool> updateTodo(_i4.Todo? todo) => (super.noSuchMethod(
+        Invocation.method(
+          #updateTodo,
+          [todo],
+        ),
+        returnValue: _i3.Future<bool>.value(false),
+      ) as _i3.Future<bool>);
+
+  @override
+  _i3.Future<bool> deleteTodo(String? id) => (super.noSuchMethod(
+        Invocation.method(
+          #deleteTodo,
+          [id],
+        ),
+        returnValue: _i3.Future<bool>.value(false),
+      ) as _i3.Future<bool>);
+
+  @override
+  _i3.Future<bool> completeTodo(_i4.Todo? todo) => (super.noSuchMethod(
+        Invocation.method(
+          #completeTodo,
+          [todo],
+        ),
+        returnValue: _i3.Future<bool>.value(false),
+      ) as _i3.Future<bool>);
 }

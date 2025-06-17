@@ -1,8 +1,10 @@
+import 'package:solid_todo/features/todo/data/models/todo_model.dart';
+
 class Todo {
   final String id;
   final String title;
   final String description;
-  final bool isCompleted;
+  bool isCompleted;
 
   Todo({
     required this.id,
@@ -11,3 +13,12 @@ class Todo {
     required this.isCompleted,
   });
 }
+
+final tes = TodoModel(
+  id: 's',
+  title: 's',
+  description: 'description',
+  isCompleted: true,
+);
+
+final Todo todo = tes;
